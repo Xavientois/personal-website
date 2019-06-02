@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body, h1, h2, h3,h4,h5,h6 {
+  font-family: 'Georgia', sans-serif;
+}
+
+body, h1, h2 {
+  color: #333;
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+// Sidebar stylings
+.w3-sidebar {
+  width: 120px;
+  background: #222;
+}
+
+#main {
+  margin-left: 120px;
+}
+
+// Screen Specific
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;
+  }
+}
+
+// Titlecard background fix
+#titleCard {
+  margin-top: 2em;
+  display: inline-block;
+}
+@media only screen and (max-height: 750px) {
+  #titleCard {
+    background-image: linear-gradient(#d7d7d4, #e0e0d1);
+  }
+}
+
+#avatar {
+  width: 80%;
+  height: auto;
+  margin: 0.5em 0em 0em 0.5em;
+  border-radius: 50%;
+}
+
+.parallax {
+  background-image: url("../img/mtl_skyline.jpg");
+  min-height: 450px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1#titleName {
+  font-family: Georgia;
+  font-size: 42px;
+  color: #ae2033;
+  margin: 0px;
+  padding: 10px 10px 0px 10px;
+}
+
+.w3-content {
+  margin: 1em 3em;
+}
