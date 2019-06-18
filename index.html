@@ -1,270 +1,328 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="img/favicon.png" type="image/png" />
-  <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
-  <title>Josh Rampersad</title>
-  <!-- Stylings  -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/timeline.css">
-  <style>
-    .w3-sidebar { width: 120px; background: #222; }
-    #titleCard { display: inline-block; margin-top: 84px; }
-    #btnResume { margin-bottom: 10px; }
-    @media only screen and (max-width: 600px) {
-      #main { margin-left: 0px; }
-      hr { width: 20%; margin: 0% 40% 0% 40%; }
-    }
-    @media only screen and (min-width: 601px) {
-      hr { width: 6%; margin: 0% 47% 0% 47%; }
-    }
-  </style>
-  <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="scripts/nav_scroll.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <title>Josh Rampersad</title>
+    <!-- Stylings  -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <style>
+.w3-sidebar { width: 120px; background: #222; }
+#titleCard { display: inline-block; margin-top: 84px; }
+#btnResume { margin-bottom: 10px; }
+@media only screen and (max-width: 600px) {
+  #main { margin-left: 0px; }
+  hr { width: 20%; margin: 0% 40% 0% 40%; }
+}
+      @media only screen and (min-width: 601px) {
+        hr { width: 6%; margin: 0% 47% 0% 47%; }
+      }
+    </style>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="scripts/nav_scroll.js"></script>
+  </head>
 
-<body class="w3-camo-black">
-  <!-- Navigation Sidebar (For large and medium screens) -->
-  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-    <!-- Small image -->
-    <img id="avatar" src="img/headshot.jpg" class="w3-greyscale-min"
-    type="image/png" alt="Avatar">
-    <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-black">
-      <p>HOME</p>
-    </a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <p>ABOUT</p>
-    </a>
-    <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <p>EXPERIENCE</p>
-    </a>
-    <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <p>EDUCATION</p>
-    </a>
-    <a href="#hobbies" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <p>HOBBIES</p>
-    </a>
-    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <p>PROJECTS</p>
-    </a>
-    <a href="#awards" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <p>AWARDS</p>
-    </a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <p>CONTACT</p>
-    </a>
-  </nav>
+  <body class="w3-camo-black">
+    <!-- Navigation Sidebar (For large and medium screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Small image -->
+      <img id="avatar" src="img/headshot.jpg" class="w3-greyscale-min"
+                                              type="image/png" alt="Avatar">
+      <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-black">
+        <p>HOME</p>
+      </a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <p>ABOUT</p>
+      </a>
+      <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <p>EXPERIENCE</p>
+      </a>
+      <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <p>EDUCATION</p>
+      </a>
+        <!--
+      <a href="#hobbies" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <p>HOBBIES</p>
+      </a>-->
+          <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <p>PROJECTS</p>
+          </a>
+          <a href="#awards" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <p>AWARDS</p>
+          </a>
+          <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <p>CONTACT</p>
+          </a>
+    </nav>
 
-  <!-- Navigation bar on small screens -->
-  <div class="w3-top w3-hide-large w3-hide-medium">
-    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-      <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">
-        HOME
-      </a>
-      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">
-        ABOUT
-      </a>
-      <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">
-        PROJECTS
-      </a>
-      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">
-        CONTACT
-      </a>
-    </div>
-  </div>
-
-  <!-- Contents of page -->
-  <div id="main">
-    <!-- Paralax Scrolling Background -->
-    <div class="parallax w3-greyscale-min w3-container w3-center" id="home">
-      <div id="titleCard" class="w3-round">
-        <h1 id="titleName">JOSHUA RAMPERSAD</h1>
-        <h2 id="titleSub">Software Developer</h2>
-        <a href="files/Joshua_Rampersad-Computer_Science.pdf" id="btnResume"
-          class="w3-button w3-camo-black w3-round-xxlarge" target="_blank" download>
-          Download Resume
+    <!-- Navigation bar on small screens -->
+    <div class="w3-top w3-hide-large w3-hide-medium">
+      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">
+          HOME
         </a>
-        <div id="social">
-          <ul>
-            <li>
-              <a href="https://github.com/Xavientois/" target="_blank">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/jrampersad" target="_blank">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:j2ramper@uwaterloo.ca" target="_blank">
-                <i class="material-icons">mail</i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">
+          ABOUT
+        </a>
+        <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">
+          PROJECTS
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">
+          CONTACT
+        </a>
       </div>
     </div>
 
-    <!-- About Me -->
-    <div class="content w3-justify w3-text-light-grey
+    <!-- Contents of page -->
+    <div id="main">
+      <!-- Paralax Scrolling Background -->
+      <div class="parallax w3-greyscale-min w3-container w3-center" id="home">
+        <div id="titleCard" class="w3-round">
+          <h1 id="titleName">JOSHUA RAMPERSAD</h1>
+          <h2 id="titleSub">Software Developer</h2>
+          <a href="files/Joshua_Rampersad-Computer_Science.pdf" id="btnResume"
+                                                                class="w3-button w3-camo-black w3-round-xxlarge" target="_blank" download>
+            Download Resume
+          </a>
+          <div id="social">
+            <ul>
+              <li>
+                <a href="https://github.com/Xavientois/" target="_blank">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jrampersad" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:j2ramper@uwaterloo.ca" target="_blank">
+                  <i class="material-icons">mail</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Me -->
+      <div class="content w3-justify w3-text-light-grey
       w3-padding-large w3-camo-black" id="about">
-      <h3>About Me</h3>
-      <hr class="w3-opacity" />
-      <div id="about_content" class="w3-cell-row w3-mobile">
-        <div class="w3-cell w3-cell-top w3-container w3-mobile">
-          <p>
+        <h3>About Me</h3>
+        <hr class="w3-opacity" />
+        <div id="about_content" class="w3-cell-row w3-mobile">
+          <div class="w3-cell w3-cell-top w3-container w3-mobile">
+            <p>
             I'm a student and programmer with a passion for performance and a
             love for leadership. 
-          </p>
-        </div>
-        <div class="w3-cell w3-container w3-greyscale-min w3-mobile">
-          <img src="img/bookshelf_1.jpg" alt="Headshot" id="headshot" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Work Experience -->
-    <div class="content w3-justify w3-text-light-grey" id="experience">
-      <h3>Work Experience</h3>
-      <hr class="w3-opacity" />
-      <div class="timeline">
-        <div class="tlCard tlLeft">
-          <h4>April 2019 - August 2019</h4>
-          <div class="tlContent">
-            <img src="img/uwaterloo_logo.png" id="isaIcon" class="tlIcon">
-            <h4>University of Waterloo</h4>
-            <h5>Instructional Support Assistant</h5>
-            <ul>
-              <li>Taught tutorials on Object-Oriented C++ development</li>
-              <li>Held office hours and maintained course Piazza forum</li>
-              <li>Provided support to instrutors and 330 students in CS 246</li>
-              <li>Organized marking sessions and managed submission server</li>
-            </ul>
+            </p>
           </div>
-        </div>
-        <div class="tlCard tlRight">
-          <h4>May 2018 - August 2018</h4>
-          <div class="tlContent">
-            <img src="img/cae_logo.png" id="caeIcon" class="tlIcon">
-            <h4>CAE</h4>
-            <h5>Analyst Programmer</h5>
-            <ul>
-              <li>Full-stack web dev using Laravel, MSSQL, and JQWidgets</li>
-              <li>Independently designed and built several web applications</li>
-              <li>Maintained communication with clients and team members
-                throughout the development process</li>
-              <li>Handled various support issues from clients</li>
-            </ul>
-          </div>
-        </div>
-        <div class="tlCard tlLeft">
-          <h4>January 2017 - December 2017</h4>
-          <div class="tlContent">
-            <img src="img/studentworks_logo.png" id="swIcon" class="tlIcon">
-            <h4>Student Works</h4>
-            <h5>Owner - Operator</h5>
-            <ul>
-              <li>Marketed through door-to-door cold calls, flyers, and online ads to accumulate over 100 clients</li>
-              <li>Sold $30 000 window and gutter cleaning services</li>
-              <li>Interviewed, hired, and trained marketing team and production teams</li>
-            </ul>
+          <div class="w3-cell w3-container w3-greyscale-min w3-mobile">
+            <img src="img/bookshelf_1.jpg" alt="Headshot" id="headshot" />
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Education -->
-    <div class="content w3-justify w3-text-light-grey w3-padding-large
+      <!-- Work Experience -->
+      <div class="content w3-justify w3-text-light-grey" id="experience">
+        <h3>Work Experience</h3>
+        <hr class="w3-opacity" />
+        <div class="timeline">
+          <div class="tlCard tlLeft">
+            <h4>April 2019 - August 2019</h4>
+            <div class="tlContent">
+              <img src="img/uwaterloo_logo.png" id="isaIcon" class="tlIcon">
+              <h4>University of Waterloo</h4>
+              <h5>Instructional Support Assistant</h5>
+              <ul>
+                <li>Taught tutorials on Object-Oriented C++ development</li>
+                <li>Held office hours and maintained course Piazza forum</li>
+                <li>Provided support to instrutors and 330 students in CS 246</li>
+                <li>Organized marking sessions and managed submission server</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tlCard tlRight">
+            <h4>May 2018 - August 2018</h4>
+            <div class="tlContent">
+              <img src="img/cae_logo.png" id="caeIcon" class="tlIcon">
+              <h4>CAE</h4>
+              <h5>Analyst Programmer</h5>
+              <ul>
+                <li>Full-stack web dev using Laravel, MSSQL, and JQWidgets</li>
+                <li>Independently designed and built several web applications</li>
+                <li>Maintained communication with clients and team members
+                  throughout the development process</li>
+                <li>Handled various support issues from clients</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tlCard tlLeft">
+            <h4>January 2017 - December 2017</h4>
+            <div class="tlContent">
+              <img src="img/studentworks_logo.png" id="swIcon" class="tlIcon">
+              <h4>Student Works</h4>
+              <h5>Owner - Operator</h5>
+              <ul>
+                <li>Marketed through door-to-door cold calls, flyers, and online ads to accumulate over 100 clients</li>
+                <li>Sold $30 000 window and gutter cleaning services</li>
+                <li>Interviewed, hired, and trained marketing team and production teams</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="content w3-justify w3-text-light-grey w3-padding-large
       w3-camo-black" id="education">
-      <h3>Education</h3>
-      <hr class="w3-opacity" />
-      <div class="education-card">
-        <h4 class="education-year">2017 - Present</h4>
-        <h4>University of Waterloo</h4>
-        <h5>Candidate for Bachelors of Computer Science, Honours, Co-op</h5>
-        <h5>Minor in Music</h5>
-        <p>
+        <h3>Education</h3>
+        <hr class="w3-opacity" />
+        <div class="education-card">
+          <h4 class="education-year">2017 - Present</h4>
+          <h4>University of Waterloo</h4>
+          <h5>Candidate for Bachelors of Computer Science, Honours, Co-op</h5>
+          <h5>Minor in Music</h5>
+          <p>
           Currently in my 3A term studying Computer Science
           with a minor in Music. I am currently an editor for
           <a href="http://mathnews.uwaterloo.ca/">mathNEWS</a>,
           the official newspaper of the Faculty of Mathematics.
           I will also be working as a residence Don in the 2019-2020
           academic year at Conrad Grebel University College.
-        </p>
-        <h6>
-          <a href="files/academic_transcript.pdf">
-            View Unofficial Transcript
-          </a>
-        </h6>
+          </p>
+          <h6>
+            <a href="files/academic_transcript.pdf">
+              View Unofficial Transcript
+            </a>
+          </h6>
+        </div>
+        <div class="education-card">
+          <h4 class="education-year">2016 - 2017</h4>
+          <h4>C&Eacute;GEP Vanier College</h4>
+          <h5>Computer Science and Mathematics Program</h5>
+          <p>
+          Spent a year enjoying one of the best parts of Quebec's
+          education system before learning that I could apply
+          to university early after having completed only one year
+          of my program. Suffice it to say that I made the right choice
+          in leaving early.
+          </p>
+        </div>
       </div>
-      <div class="education-card">
-        <h4 class="education-year">2016 - 2017</h4>
-        <h4>C&Eacute;GEP Vanier College</h4>
-        <h5>Computer Science and Mathematics Program</h5>
+
+      <!-- Hobbies
+        <div class="content w3-justify w3-text-light-grey" id="hobbies">
+        <h3>Hobbies</h3>
+        <hr class="w3-opacity" />
         <p>
-        Spent a year enjoying one of the best parts of Quebec's
-        education system before learning that I could apply
-        to university early after having completed only one year
-        of my program. Suffice it to say that I made the right choice
-        in leaving early.
+        </p>
+        </div>
+      -->
+
+      <!-- Projects -->
+      <div class="content w3-justify w3-text-light-grey
+      w3-padding-large w3-camo-black" id="projects">
+        <h3>Projects</h3>
+        <hr class="w3-opacity" />
+        <div class="w3-cell-row project-card">
+          <div class="w3-cell">
+            <div class="project-visual">
+              <img src="img/ship_attack.gif"/>
+            </div>
+          </div>
+          <div class="w3-cell w3-cell-top">
+            <h4>Ship Attack Game</h4>
+            <p>
+            In grade 10, I took the Computer Science elective offered at my high
+            school. This is where I truly fell in love with programming. We
+            spent the year learning Object-Oriented Java programming and ended
+            with an open final project. The task: Make a game. This project is
+            what came out of that undertaking. The visuals may not be terribly
+            impressive, but to this day, I am proud of this game I built from
+            scratch.
+            </p>
+            <p>
+            The game is a simple top-down shooter. Using your blaster, fire at
+            enemy ships and survive the oncoming onslaught as long as possible.
+            It scrolls infintely, but once you accumulate enough points, the
+            waves of enemies get tougher and the tension rises.
+            </p>
+            <div class="w3-cell-row">
+              <div class="w3-cell">
+                <h5>
+                  <a href="https://github.com/Xavientois/ShipAttack">
+                    View GitHub Repo
+                  </a>
+                </h5>
+              </div>
+              <div class="w3-cell">
+                <h5>
+                  <a href="files/ShipAttack.jar" target="_blank" download>
+                    Download Game JAR
+                  </a>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-cell-row project-card">
+          <div class="w3-cell w3-cell-top">
+            <h4>Maze Solver</h4>
+            <p>
+              During one of my winter breaks, I decided that I would should
+              learn a new programming language.
+            </p>
+            <div class="w3-cell-row">
+              <div class="w3-cell">
+                <h5>
+                  <a href="https://github.com/Xavientois/Maze_Solver">
+                    View GitHub Repo
+                  </a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="w3-cell">
+            <div class="project-visual">
+              <img src="img/maze_solver.gif"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Awards -->
+      <div class="content w3-justify w3-text-light-grey" id="awards">
+        <h3>Awards</h3>
+        <hr class="w3-opacity" />
+        <p>
+        Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
       </div>
-    </div>
 
-    <!-- Hobbies -->
-    <div class="content w3-justify w3-text-light-grey" id="hobbies">
-      <h3>Hobbies</h3>
-      <hr class="w3-opacity" />
-      <p>
-      Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-    </div>
-
-    <!-- Projects -->
-    <div class="content w3-justify w3-text-light-grey
-      w3-padding-large w3-camo-black" id="projects">
-      <h3>Projects</h3>
-      <hr class="w3-opacity" />
-      <p>
-      Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-    </div>
-
-    <!-- Awards -->
-    <div class="content w3-justify w3-text-light-grey" id="awards">
-      <h3>Awards</h3>
-      <hr class="w3-opacity" />
-      <p>
-      Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-    </div>
-
-    <!-- Contact -->
-    <div class="content w3-justify w3-text-light-grey
+      <!-- Contact -->
+      <div class="content w3-justify w3-text-light-grey
       w3-padding-large w3-camo-black" id="contact">
-      <h3>Contact</h3>
-      <hr class="w3-opacity" />
-      <p>
-      Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-    </div>
-    <div class="parallax w3-greyscale-min w3-container w3-center" />
-  </div>
-</body>
+        <h3>Contact</h3>
+        <hr class="w3-opacity" />
+        <p>
+        Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div class="parallax w3-greyscale-min w3-container w3-center" />
+      </div>
+  </body>
 </html>

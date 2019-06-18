@@ -160,7 +160,7 @@ h2#titleSub {
   margin-top: 1em;
 }
 
-.education-card>h4 {
+h4 {
   margin: 0px;
 }
 
@@ -182,3 +182,36 @@ h2#titleSub {
   float: right;
 }
 
+.project-card>div:last-child {
+  padding: 15px 30px 15px 15px;
+}
+
+.project-card>div:first-child {
+  padding: 15px 15px 15px 30px;
+}
+
+.project-visual {
+  max-height: 19em;
+  width: auto;
+  display: inline-block;
+  background-color: #000;
+  color: #000;
+  box-shadow: 5px 5px 8px;
+}
+
+.project-visual img {
+  max-height: inherit;
+}
+
+#projects h5 {
+  margin: 0px;
+}
+
+#projects  h5>a {
+  text-decoration: none;
+  color: #f3bec6;
+}
+
+#projects  h5>a:hover {
+  text-decoration: underline;
+}
