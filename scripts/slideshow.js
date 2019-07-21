@@ -1,3 +1,7 @@
+// Constants
+var interval = 7000; // Time interval for slides
+var slideIndex = 0; // Index of current slide
+
 // Increment to next slide
 function incSlide(n = 1) {
   showSlide(slideIndex += n);
@@ -18,8 +22,10 @@ function showSlide(n) {
 
 $(".slideBtn").on("click", function(index){
   showSlide($(".slideBtn").index(this));
+  // Reset slide auto-increment timer
+  clearInterval(slideInterval);
+  slideInterval = setInterval(incSlide, interval);
 });
 
-var slideIndex = 0; // Index of current slide
 showSlide(slideIndex);
-setInterval(incSlide, 7000);
+var slideInterval = setInterval(incSlide, interval);
