@@ -42,6 +42,11 @@ h3 {
   background-size: cover;
 }
 
+.page-container {
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+}
 
 /* Screen Specific */
 @media only screen and (max-width: 600px) {
@@ -106,23 +111,26 @@ h2#titleSub {
   margin-bottom: 10px;
 }
 
-#social {
+.social {
   justify-content: center;
   display: flex;
   font-size: 19px;
-  color: #333;
 }
 
-#social>ul {
+.social>ul {
   list-style-type: none;
   overflow: hidden;
   margin: 0px;
   padding: 0px;
 }
 
-#social>ul>li {
+.social>ul>li {
   float: left;
   margin: 0px 0.5em;
+}
+
+#topSocial{
+  color: #333;
 }
 
 /* Page content (After title) */
@@ -219,45 +227,47 @@ h4 {
   text-decoration: underline;
 }
 
-/* Hobbies */
-#hobbySlides {
+#contact {
   text-align: center;
+  padding-bottom: 5px;
 }
 
-#hobbyButtons {
+#contactForm {
+  text-align: justify;
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+#contactForm > input,textarea {
+  margin-bottom: 10px;
+  background: linear-gradient(to top, #505050 0%,#505050 60%,#404040 100%);
+  color: #fff;
+}
+
+#message {
+  resize: vertical;
+  height: 14em;
+}
+
+#sendWrapper {
   margin-top: 15px;
-}
-
-.slide {
   text-align: center;
-  display: none;
-  overflow: hidden;
-  padding: 15px;
-  position: relative;
 }
 
-.slide img {
-  max-height: 530px;
-  max-width: 100%;
-  color: #000;
-  box-shadow: 5px 5px 8px;
-  opacity: 0.25;
+#sendMessage {
+  width: 100%;
 }
 
-.slide>div {
-  z-index: 9999999;
-  background-color: rgba(0, 0, 0, 0.5);
+#bottomSocial {
+  margin-top: 10px;
+  color: #fff;
+}
+
+#copyright {
+  display: inline-block;
   padding: 1em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-#musicSlide {
-  display: block;
-}
-
-#hobbyButtons button:first-child {
-  background-color: #ccc;
+  position: relative;
+  bottom: 0;
+  right: 0;
 }

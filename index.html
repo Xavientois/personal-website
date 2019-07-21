@@ -13,17 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/slides.css">
     <style>
-.w3-sidebar { width: 120px; background: #222; }
-#titleCard { display: inline-block; margin-top: 84px; }
-#btnResume { margin-bottom: 10px; }
-@media only screen and (max-width: 600px) {
-  #main { margin-left: 0px; }
-  hr { width: 20%; margin: 0% 40% 0% 40%; }
-}
-        @media only screen and (min-width: 601px) {
-          hr { width: 6%; margin: 0% 47% 0% 47%; }
-        }
+      .w3-sidebar { width: 120px; background: #222; }
+      #titleCard { display: inline-block; margin-top: 84px; }
+      #btnResume { margin-bottom: 10px; }
+      @media only screen and (max-width: 600px) {
+        #main { margin-left: 0px; }
+        hr { width: 20%; margin: 0% 40% 0% 40%; }
+      }
+      @media only screen and (min-width: 601px) {
+        hr { width: 6%; margin: 0% 47% 0% 47%; }
+      }
     </style>
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -92,7 +93,7 @@
                                                                 class="w3-button w3-camo-black w3-round-xxlarge" target="_blank" download>
             Download Resume
           </a>
-          <div id="social">
+          <div class="social" id="topSocial">
             <ul>
               <li>
                 <a href="https://github.com/Xavientois/" target="_blank">
@@ -123,7 +124,21 @@
           <div class="w3-cell w3-cell-top w3-container w3-mobile">
             <p>
             I'm a student and programmer with a passion for performance and a
-            love for leadership. 
+            love for leadership. Learning is where I draw the most fulfillment
+            in life. Whether it be full-stack web development, music, acting, or
+            something completely new, I am always up to the challenge of
+            learning something new. I am currently looking for software
+            development work which will push me to improve my current skills
+            and maybe even pick up some new ones along the way.
+            With my diversity of experience, I bring many soft and hard skills
+            to any job I do.
+            </p>
+            <p>
+            When I am not learning a new skill or working to master one I
+            already know, you'll likely find me going for a run or walk to
+            a new part of the neighborhood. I also play video games (especially
+            JRPGs) and some tabletop games (Yes, I also play Dungeons &amp;
+            Dragons).
             </p>
           </div>
           <div class="w3-cell w3-container w3-greyscale-min w3-mobile">
@@ -433,12 +448,73 @@
       -->
 
       <!-- Contact -->
-      <div class="content w3-justify w3-text-light-grey
-      w3-padding-large w3-camo-black" id="contact">
+      <div class="content w3-text-light-grey
+       w3-camo-black" id="contact">
         <h3>Contact</h3>
         <hr class="w3-opacity" />
+
+        <form id="contactForm">
+          <label for="name"><h4>Name</h4></label>
+          <input id="name" class="w3-input" type="text" name="name" required>
+          <label for="email"><h4>Email</h4></label>
+          <input id="email" class="w3-input" type="email" name="email" required>
+          <label for="message"><h4>Message</h4></label>
+          <textarea id="message" class="w3-input" name="message"
+            required></textarea>
+            <div id="sendWrapper">
+              <input type="submit" class="w3-btn" name="submit"
+                id="sendMessage" value="Send">
+              </input>
+            </div>
+        </form>
+
+<script>
+$("#contactForm").on('submit', function() {
+  // Until server side calls can be made to work
+  alert("Message failed to send. Feel free to email me directly at j2ramper@uwaterloo.ca");
+
+  $.post("scripts/contact.php",
+    {
+       email: this.elements.email.value,
+       name: this.elements.name.value,
+       message: this.elements.message.value
+     },
+    function(data, status){
+      alert("Data: " + data + "\nStatus: " + status);
+      this.trigger("reset");
+    },
+    function(){
+      alert("Message failed to send.");
+    });
+
+  return false;
+});
+</script>
+
+        <hr class="w3-opacity" />
+
+        <div class="social" id="bottomSocial">
+          <ul>
+            <li>
+              <a href="https://github.com/Xavientois/" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jrampersad" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:j2ramper@uwaterloo.ca" target="_blank">
+                <i class="material-icons">mail</i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="parallax w3-greyscale-min w3-container w3-center" />
+      <div class="parallax w3-greyscale-min w3-container w3-center">
+      </div>
 
         <!-- Scripts that need to run after page load -->
         <script src="scripts/slideshow.js"></script>
