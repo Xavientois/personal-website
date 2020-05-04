@@ -12,6 +12,10 @@ body, h1, h2 {
   color: #333;
 }
 
+body {
+  background-color: #373538;
+}
+
 h3 {
   text-align: center;
   margin-bottom: 0px;
@@ -135,6 +139,7 @@ h2#titleSub {
 
 /* Page content (After title) */
 #main div.content:nth-child(even) {
+  background-color: #373538;
   margin: 1em 3em;
 }
 

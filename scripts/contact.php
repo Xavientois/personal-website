@@ -1,3 +1,4 @@
+#!/usr/bin/php-cgi
 <?php
 // Get POST data
 $name = $_POST['name'];

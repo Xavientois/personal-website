@@ -462,34 +462,12 @@
           <textarea id="message" class="w3-input" name="message"
             required></textarea>
             <div id="sendWrapper">
-              <input type="submit" class="w3-btn" name="submit"
-                id="sendMessage" value="Send">
-              </input>
+              <button class="w3-btn" name="submit" id="sendMessage">
+                Send
+              </button>
             </div>
         </form>
 
-<script>
-$("#contactForm").on('submit', function() {
-  // Until server side calls can be made to work
-  alert("Message failed to send. Feel free to email me directly at j2ramper@uwaterloo.ca");
-
-  $.post("scripts/contact.php",
-    {
-       email: this.elements.email.value,
-       name: this.elements.name.value,
-       message: this.elements.message.value
-     },
-    function(data, status){
-      alert("Data: " + data + "\nStatus: " + status);
-      this.trigger("reset");
-    },
-    function(){
-      alert("Message failed to send.");
-    });
-
-  return false;
-});
-</script>
 
         <hr class="w3-opacity" />
 
@@ -516,7 +494,8 @@ $("#contactForm").on('submit', function() {
       <div class="parallax w3-greyscale-min w3-container w3-center">
       </div>
 
-        <!-- Scripts that need to run after page load -->
-        <script src="scripts/slideshow.js"></script>
+      <!-- Scripts that need to run after page load -->
+      <script src="scripts/slideshow.js"></script>
+      <script src="scripts/send.js"></script>
   </body>
 </html>
